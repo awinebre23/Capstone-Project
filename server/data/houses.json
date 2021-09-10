@@ -1,0 +1,90 @@
+[
+    {
+        "HouseId": 1,
+        "Address": "1234 House Ave",
+        "State": "Arkansas",
+        "City": "Rogers",
+        "ZipCode": "72758",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "Beautiful",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 5000,
+        "Progress": "In Progress",
+        "Images": [
+            "path"
+        ],
+        "Investors": [
+            {
+                "InvestorId": 1,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Ezra Aiden",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            }
+        ]
+    },
+    {
+        "HouseId": 2,
+        "Address": "456 Real Building Road",
+        "State": "Colorado",
+        "City": "Boulder",
+        "ZipCode": "12345",
+        "OrganizationName": "Real Real Estate Company",
+        "Description": "Beautiful",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 5000,
+        "Progress": "In Progress",
+        "Images": [
+            "path"
+        ],
+        "Investors": [
+            {
+                "InvestorId": 2,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Mr Investor",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            }
+        ]
+    },
+    {
+        "HouseId": 3,
+        "Address": "1234 House Ave",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Homes R Us",
+        "Description": "Beautiful",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "path"
+        ],
+        "Investors": []
+    },
+    {
+        "HouseId": 4,
+        "Address": "1234 House Ave",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "Beautiful",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 0,
+        "Progress": "Investment Total Reached",
+        "Images": [
+            "path"
+        ],
+        "Investors": [
+            {
+                "InvestorId": 3,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Ezra Aiden",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            }
+        ]
+    }
+]

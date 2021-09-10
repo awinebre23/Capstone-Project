@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Alec Winebrenner",
+        "role": "Member",
+        "username": "username",
+        "password": "password"
+    },
+    {
+        "id": 2,
+        "name": "Siddalee Grace",
+        "role": "Investor",
+        "username": "cheer",
+        "password": "Cheer"
+    },
+    {
+        "id": 3,
+        "name": "Pursalane Faith",
+        "role": "Investor",
+        "username": "farmgirl",
+        "password": "farmgirl"
+    },
+    {
+        "id": 4,
+        "name": "Zephaniah Hughes",
+        "role": "Investor",
+        "username": "corndog",
+        "password": "corn!dog"
+    },
+    {
+        "id": 5,
+        "name": "Ezra Aidden",
+        "role": "Investor",
+        "username": "theaterkid",
+        "password": "!theaterkid!"
+    },
+    {
+        "id": 6,
+        "name": "Elisha Aslan",
+        "role": "Investor",
+        "username": "gamer05",
+        "password": "gamer05!"
+    },
+    {
+        "id": 7,
+        "name": "Dana White",
+        "role": "Investor",
+        "username": "dana58",
+        "password": "!not_telling_you!"
+    },
+    {
+        "id": 8,
+        "name": "Christina Fast",
+        "role": "Investor",
+        "username": "swifty",
+        "password": "reallyfast!"
+    }
+]
