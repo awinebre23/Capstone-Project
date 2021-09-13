@@ -1,0 +1,12 @@
+main {
+  overflow-y: auto;
+  height: 750px;
+}
+
+span {
+  display: flex;
+}
+
+cs-feed-item {
+  width: 75%;
+}
