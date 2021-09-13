@@ -11,7 +11,7 @@
         "CurrentFunds": 5000,
         "Progress": "In Progress",
         "Images": [
-            "path"
+            "assets/images/house1.png"
         ],
         "Investors": [
             {
@@ -35,7 +35,7 @@
         "CurrentFunds": 5000,
         "Progress": "In Progress",
         "Images": [
-            "path"
+            "assets/images/house2.png"
         ],
         "Investors": [
             {
@@ -59,7 +59,7 @@
         "CurrentFunds": 0,
         "Progress": "In Progress",
         "Images": [
-            "path"
+            "assets/images/house3.png"
         ],
         "Investors": []
     },
@@ -72,10 +72,10 @@
         "OrganizationName": "Flippin Good Houses",
         "Description": "Beautiful",
         "RequiredFunds": 1000000,
-        "CurrentFunds": 0,
+        "CurrentFunds": 1000000,
         "Progress": "Investment Total Reached",
         "Images": [
-            "path"
+            "assets/images/house4.png"
         ],
         "Investors": [
             {
@@ -83,7 +83,7 @@
                 "InvestorEmail": "theaterkid0625@gmail.com",
                 "InvestorName": "Ezra Aiden",
                 "InvestorPhone": "555-000-0002",
-                "Investment": 5000
+                "Investment": 1000000
             }
         ]
     }

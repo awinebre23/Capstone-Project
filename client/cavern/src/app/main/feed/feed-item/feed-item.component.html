@@ -1,7 +1,14 @@
-<section>
+<section class="completed">
     <img src="{{ house.Images[0] }}" alt="">
-    <div>
-        <p class="funds">{{ fundsNeeded | money }} still needed!</p>
-        <p class="address">{{ house.Address }}</p>
-    </div>
+    <span>
+        <div>
+            <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }} still needed!</p>
+            <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
+            <p class="address">{{ house.Address }}</p>
+            <p class="org">{{ house.OrganizationName }}</p>
+        </div>
+        <div>
+            <p class="progress">{{ house.Progress }}</p>
+        </div>
+    </span>
 </section>

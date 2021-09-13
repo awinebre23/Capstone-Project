@@ -1,12 +1,12 @@
 ul {
   list-style-type: none;
   background-color: #d4bc94;
-  height: 2.25em;
+  height: 2.5em;
   margin-top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-bottom: 1px solid #000;
 }
 
@@ -14,11 +14,10 @@ li > a {
   color: #fff;
   text-decoration: none;
   display: inline;
-  background-position: right center;
-  background-repeat: no-repeat;
   padding-right: 1.8em;
   padding-left: 0.45em;
   cursor: pointer;
+  font-size: larger;
 }
 
 nav > ul > li > a.active {

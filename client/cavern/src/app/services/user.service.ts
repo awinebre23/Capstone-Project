@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable, Optional } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { User } from '../models/User';
 
 
@@ -11,8 +12,10 @@ export class UserService {
 
   private user: User = new User(0, '', '', '', '');
   currentUser = new BehaviorSubject<User>(this.user);
+  private loginUrl: string = 'http://localhost:8082/api/login';
+  private signupUrl: string = 'http://localhost:8082/api/users';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getUser(): User {
     if (localStorage.getItem('currentUser')) {
@@ -28,7 +31,15 @@ export class UserService {
     this.currentUser.next(user);
   }
 
-  static storeUserLocal(user) {
+  login(formValues: any): Observable<User> {
+    return this.http.post<User>(this.loginUrl, formValues);
+  }
+
+  signup(formValues: any): Observable<User> {
+    return this.http.post<User>(this.signupUrl, formValues);
+  }
+
+  storeUserLocal(user) {
     localStorage.setItem('currentUser', JSON.stringify(user));
   }
 }

@@ -9,6 +9,11 @@ import { FooterComponent } from './core/footer/footer.component';
 import { FeedModule } from './main/feed/feed.module';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LandingComponent } from './landing/landing.component';
+import { LoginComponent } from './landing/login/login.component';
+import { SignupComponent } from './landing/signup/signup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,13 +21,19 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     NavComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    LandingComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FeedModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

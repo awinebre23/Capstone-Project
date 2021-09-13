@@ -1,0 +1,25 @@
+<form [formGroup]="regForm" (ngSubmit)="onSubmit(regForm.value)" class="box" id="registerForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" formControlName="name" tabindex="1" placeholder="Enter your name here.">
+    <p *ngIf="!regForm.controls['name'].valid && regForm.controls['name'].touched">Please
+        enter your name</p>
+
+    <label for="username">Username</label>
+    <input type="text" id="username" formControlName="username" tabindex="1" placeholder="Enter your username here.">
+    <p *ngIf="!regForm.controls['username'].valid && regForm.controls['username'].touched">Please
+        enter your username</p>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" formControlName="password" tabindex="1"
+        placeholder="Enter your password here.">
+    <p *ngIf="!regForm.controls['password'].valid && regForm.controls['password'].touched">Please
+        enter your password</p>
+
+    <label for="role">Role: </label>
+    <input type="radio" id="role" name="role" value="Investor">
+    <label for="role">Investor</label>
+    <input type="radio" id="role" name="role" value="Member">
+    <label for="role">Member</label>
+
+    <input type="submit" tabindex="7" id="register-user" value="Sign Up">
+</form>

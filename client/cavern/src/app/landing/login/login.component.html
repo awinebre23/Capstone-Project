@@ -1,0 +1,14 @@
+<form [formGroup]="regForm" (ngSubmit)="onSubmit(regForm.value)" class="box" id="registerForm">
+    <label for="name">Username</label>
+    <input type="text" id="username" formControlName="username" tabindex="1" placeholder="Enter your username here.">
+    <p *ngIf="!regForm.controls['username'].valid && regForm.controls['username'].touched">Please
+        enter your username</p>
+
+    <label for="name">Password</label>
+    <input type="password" id="password" formControlName="password" tabindex="1"
+        placeholder="Enter your password here.">
+    <p *ngIf="!regForm.controls['password'].valid && regForm.controls['password'].touched">Please
+        enter your password</p>
+
+    <input type="submit" tabindex="7" id="register-user" value="Log In">
+</form>

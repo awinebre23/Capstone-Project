@@ -1,3 +1,20 @@
 main {
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 750px;
+  width: 75%;
+}
+
+div {
+  width: 25%;
+  background-color: orange;
+  position: sticky;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

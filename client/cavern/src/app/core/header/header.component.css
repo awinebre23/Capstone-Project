@@ -10,8 +10,9 @@ header > * {
   margin: 0 1em;
 }
 
-header > p {
+header > h1 {
   color: #d4bc94;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 3em;
+  padding-left: 1em;
 }
