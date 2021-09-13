@@ -4,12 +4,13 @@ import { Observable } from 'rxjs';
 import { House } from '../models/house';
 import { Investor } from '../models/investor';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class HouseService {
 
-  private houseBaseUrl: string = 'http://localhost:8002/api/houses';
+  private houseBaseUrl: string = 'http://localhost:8082/api/houses';
 
   constructor(private http: HttpClient) { }
 

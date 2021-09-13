@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { NavComponent } from './core/nav/nav.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { FeedModule } from './main/feed/feed.module';
+import { MainComponent } from './main/main.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FeedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

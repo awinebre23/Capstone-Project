@@ -1,9 +1,9 @@
 <nav>
     <ul>
-        <li><a routerLink="" routerLinkActive="active">Invest</a></li>
-        <li><a routerLink="" routerLinkActive="active">Submit Home</a></li>
-        <li *ngIf="!isAdmin"><a routerLink="" routerLinkActive="active">My Investments</a></li>
-        <li *ngIf="isAdmin"><a routerLink="" routerLinkActive="active">Manage Properties</a></li>
-        <li><a routerLink="" routerLinkActive="active">Account</a></li>
+        <li><a routerLink="invest" routerLinkActive="active">Invest</a></li>
+        <li><a routerLink="submit-home" routerLinkActive="active">Submit Home</a></li>
+        <li *ngIf="!isAdmin"><a routerLink="manage" routerLinkActive="active">My Investments</a></li>
+        <li *ngIf="isAdmin"><a routerLink="manage" routerLinkActive="active">Manage Properties</a></li>
+        <li><a routerLink="default" routerLinkActive="active">Account</a></li>
     </ul>
 </nav>

@@ -12,4 +12,6 @@ header > * {
 
 header > p {
   color: #d4bc94;
+  font-weight: bolder;
+  font-size: larger;
 }
