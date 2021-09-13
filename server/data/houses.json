@@ -86,5 +86,53 @@
                 "Investment": 1000000
             }
         ]
+    },
+    {
+        "HouseId": 5,
+        "Address": "45832 Street Road",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "Beautiful",
+        "RequiredFunds": 100000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house5.png"
+        ],
+        "Investors": []
+    },
+    {
+        "HouseId": 6,
+        "Address": "7536 Thisanaddress Court",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "Beautiful",
+        "RequiredFunds": 100000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house6.png"
+        ],
+        "Investors": []
+    },
+    {
+        "HouseId": 7,
+        "Address": "777 Plzinvest Road",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "Beautiful",
+        "RequiredFunds": 100000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house7.png"
+        ],
+        "Investors": []
     }
 ]
