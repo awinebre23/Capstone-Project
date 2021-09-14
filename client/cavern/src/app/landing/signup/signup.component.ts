@@ -28,6 +28,7 @@ export class SignupComponent implements OnInit {
     this.userService.signup(formValues).subscribe(res => {
       this.userService.storeUserLocal(res);
       this.router.navigateByUrl('invest');
+      window.location.reload();
     }, err => {
       alert('Unable to signup');
     });

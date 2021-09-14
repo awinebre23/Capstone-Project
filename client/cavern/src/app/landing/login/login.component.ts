@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private userService: UserService, private fb: FormBuilder, private router: Router) {
     this.regForm = fb.group({
-      'username': [null, Validators.required],
+      'username': [null, [Validators.required]],
       'password': [null, [Validators.required]]
     });
   }
@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     this.userService.login(formValues).subscribe(res => {
       this.userService.storeUserLocal(res);
       this.router.navigateByUrl('invest');
+      window.location.reload();
     }, err => {
       alert('Unable to login');
     });

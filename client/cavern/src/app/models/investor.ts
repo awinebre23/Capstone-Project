@@ -5,11 +5,9 @@ export class Investor {
     InvestorPhone: string;
     Investment: number;
 
-    constructor(id, email, name, phone, investment) {
+    constructor(id, name, investment) {
         this.InvestorId = id;
-        this.InvestorEmail = email;
         this.InvestorName = name;
-        this.InvestorPhone = phone;
         this.Investment = investment;
     }
 }

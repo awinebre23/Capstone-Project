@@ -5,6 +5,7 @@ import { EditInvestmentComponent } from './property-detail/edit-investment/edit-
 import { EditPropertyComponent } from './property-detail/edit-property/edit-property.component';
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule
   ]
 })

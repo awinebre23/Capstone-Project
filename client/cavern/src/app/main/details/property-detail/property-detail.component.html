@@ -1,15 +1,19 @@
 <section *ngIf="house">
-    <img src="{{ house.Images[0] }}" alt="">
     <span>
-        <div class=" details">
-            <h1 class="address">{{ house.Address }}</h1>
-            <p class="org">{{ house.OrganizationName }}</p>
-            <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }}
-                still needed!</p>
-            <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
+        <div class="details">
+            <img src="{{ house.Images[0] }}">
+            <div>
+                <h1 class="address">{{ house.Address }}</h1>
+                <p class="progress">{{ house.Progress }}</p>
+                <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }} still needed!</p>
+                <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
+                <p class="org">{{ house.OrganizationName }}</p>
+            </div>
         </div>
-        <div>
-            <p class="progress">{{ house.Progress }}</p>
+        <div class="stack">
+            <p class="description">{{ house.Description }}</p>
+            <cs-edit-investment *ngIf="!isAdmin" [house]="house" [fundsNeeded]="fundsNeeded"></cs-edit-investment>
+            <cs-edit-property *ngIf="isAdmin" [house]="house" [fundsNeeded]="fundsNeeded"></cs-edit-property>
         </div>
     </span>
 </section>

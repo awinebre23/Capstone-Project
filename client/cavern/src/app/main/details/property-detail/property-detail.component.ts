@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { House } from 'src/app/models/house';
 import { HouseService } from 'src/app/services/house.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'cs-property-detail',
@@ -13,12 +14,16 @@ export class PropertyDetailComponent implements OnInit {
   house: House;
   houseId: number;
   fundsNeeded: number;
+  isAdmin: boolean = false;
 
-  constructor(private houseService: HouseService, private route: ActivatedRoute) {
+  constructor(private houseService: HouseService, private userService: UserService, private route: ActivatedRoute) {
     this.route.params.subscribe(params => this.houseId = params.id);
   }
 
   ngOnInit(): void {
+    if (this.userService.getUser().role === 'Member') {
+      this.isAdmin = true;
+    }
     this.houseService.getHouseById(this.houseId).subscribe(house => {
       this.house = house;
       this.fundsNeeded = this.house.RequiredFunds - this.house.CurrentFunds;
