@@ -12,3 +12,8 @@ footer {
 footer > * {
   padding: 0 1em;
 }
+
+p {
+  font-family: cursive;
+  font-style: italic;
+}

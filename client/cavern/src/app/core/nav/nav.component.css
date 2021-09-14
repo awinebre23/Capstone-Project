@@ -18,6 +18,7 @@ li > a {
   padding-left: 0.45em;
   cursor: pointer;
   font-size: larger;
+  font-family: cursive;
 }
 
 nav > ul > li > a.active {

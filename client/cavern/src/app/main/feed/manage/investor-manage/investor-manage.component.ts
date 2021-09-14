@@ -34,7 +34,7 @@ export class InvestorManageComponent implements OnInit {
   }
 
   editInvestment() {
-    this.router.navigateByUrl(`details/${this.house.HouseId}`);
+    this.router.navigateByUrl(`edit/${this.house.HouseId}`);
   }
 
   contactOrganization() {

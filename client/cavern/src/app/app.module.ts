@@ -9,12 +9,10 @@ import { FooterComponent } from './core/footer/footer.component';
 import { FeedModule } from './main/feed/feed.module';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LandingComponent } from './landing/landing.component';
-import { LoginComponent } from './landing/login/login.component';
-import { SignupComponent } from './landing/signup/signup.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SubmitHomeComponent } from './landing/submit-home/submit-home.component';
+import { DetailsModule } from './main/details/details.module';
+import { LandingModule } from './landing/landing.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,20 +20,17 @@ import { SubmitHomeComponent } from './landing/submit-home/submit-home.component
     HeaderComponent,
     NavComponent,
     FooterComponent,
-    MainComponent,
-    LandingComponent,
-    LoginComponent,
-    SignupComponent,
-    SubmitHomeComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FeedModule,
     HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    DetailsModule,
+    LandingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

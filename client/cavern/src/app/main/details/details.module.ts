@@ -4,6 +4,7 @@ import { OrganizationDetailComponent } from './organization-detail/organization-
 import { EditInvestmentComponent } from './property-detail/edit-investment/edit-investment.component';
 import { EditPropertyComponent } from './property-detail/edit-property/edit-property.component';
 import { PropertyDetailComponent } from './property-detail/property-detail.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PropertyDetailComponent } from './property-detail/property-detail.compo
     EditPropertyComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class DetailsModule { }

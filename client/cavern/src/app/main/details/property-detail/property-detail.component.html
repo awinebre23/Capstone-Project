@@ -1,3 +1,15 @@
-<p>property-detail works!</p>
-
-<!-- <cs-edit-investment></cs-edit-investment> -->
+<section *ngIf="house">
+    <img src="{{ house.Images[0] }}" alt="">
+    <span>
+        <div class=" details">
+            <h1 class="address">{{ house.Address }}</h1>
+            <p class="org">{{ house.OrganizationName }}</p>
+            <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }}
+                still needed!</p>
+            <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
+        </div>
+        <div>
+            <p class="progress">{{ house.Progress }}</p>
+        </div>
+    </span>
+</section>

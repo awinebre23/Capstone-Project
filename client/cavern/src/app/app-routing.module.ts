@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Route, Routes, RouterModule, CanActivate } from '@angular/router';
+import { AccountComponent } from './landing/account/account.component';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './landing/login/login.component';
 import { SignupComponent } from './landing/signup/signup.component';
@@ -27,7 +28,8 @@ const routes: Routes = [
       { path: 'manage', component: ManageComponent, canActivate: [RegisterGuardService] },
       { path: 'details/:id', component: PropertyDetailComponent, canActivate: [RegisterGuardService] },
       { path: 'edit/:id', component: PropertyDetailComponent, canActivate: [RegisterGuardService] },
-      { path: 'organization/:id', component: OrganizationDetailComponent, canActivate: [RegisterGuardService] },
+      { path: 'organizations/:id', component: OrganizationDetailComponent, canActivate: [RegisterGuardService] },
+      { path: 'account', component: AccountComponent, canActivate: [RegisterGuardService] },
       fallbackRoute
     ]
   }

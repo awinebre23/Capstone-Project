@@ -24,7 +24,7 @@ export class MemberManageComponent implements OnInit {
   }
 
   editProperty(): void {
-    this.router.navigateByUrl(`details/${this.house.HouseId}`);
+    this.router.navigateByUrl(`edit/${this.house.HouseId}`);
   }
 
 }

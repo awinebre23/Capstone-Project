@@ -20,4 +20,8 @@ export class LandingComponent implements OnInit {
   clickedSignup(): void {
     this.router.navigateByUrl('/signup');
   }
+
+  clickedSubmit(): void {
+    this.router.navigateByUrl('/submit-home');
+  }
 }
