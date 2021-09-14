@@ -14,6 +14,7 @@ import { LoginComponent } from './landing/login/login.component';
 import { SignupComponent } from './landing/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SubmitHomeComponent } from './landing/submit-home/submit-home.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommonModule } from '@angular/common';
     MainComponent,
     LandingComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SubmitHomeComponent
   ],
   imports: [
     BrowserModule,

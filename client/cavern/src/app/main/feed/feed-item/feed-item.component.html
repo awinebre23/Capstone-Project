@@ -1,11 +1,12 @@
 <section class="completed">
-    <img src="{{ house.Images[0] }}" alt="">
+    <img src="{{ house.Images[0] }}" (click)="details()" alt="">
     <span>
-        <div>
-            <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }} still needed!</p>
-            <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
-            <p class="address">{{ house.Address }}</p>
+        <div class="details">
+            <h1 class="address" (click)="details()">{{ house.Address }}</h1>
             <p class="org">{{ house.OrganizationName }}</p>
+            <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }}
+                still needed!</p>
+            <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
         </div>
         <div>
             <p class="progress">{{ house.Progress }}</p>

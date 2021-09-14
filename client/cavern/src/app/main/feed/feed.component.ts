@@ -15,12 +15,8 @@ export class FeedComponent implements OnInit {
   constructor(private houseService: HouseService) { }
 
   ngOnInit(): void {
-    this.houseService.getAllHouses().subscribe(
-      (res: any) => {
-        this.houses = res;
-        console.log(this.houses);
-      }
-    );
-
+    this.houseService.getAllHouses().subscribe((res: any) => {
+      this.houses = res;
+    });
   }
 }

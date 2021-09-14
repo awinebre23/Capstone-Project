@@ -5,6 +5,7 @@ section {
   outline: none;
   margin: 10px 10px;
   background-color: white;
+  min-width: 800px;
 }
 
 span {
@@ -17,11 +18,26 @@ div {
   margin: 10px;
 }
 
+.details {
+  text-align: left;
+}
+
 img {
   margin: 10px;
+  cursor: pointer;
 }
 
 .funds {
   font-weight: bolder;
+  font-size: 25px;
+}
+
+.address {
+  cursor: pointer;
+  font-weight: bolder;
   font-size: 30px;
+}
+
+.org {
+  margin-top: 70%;
 }

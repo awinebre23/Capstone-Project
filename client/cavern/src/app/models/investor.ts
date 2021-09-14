@@ -1,15 +1,15 @@
 export class Investor {
-    id: number;
-    email: string;
-    name: string;
-    phone: string;
-    investment: number;
+    InvestorId: number;
+    InvestorEmail: string;
+    InvestorName: string;
+    InvestorPhone: string;
+    Investment: number;
 
     constructor(id, email, name, phone, investment) {
-        this.id = id;
-        this.email = email;
-        this.name = name;
-        this.phone = phone;
-        this.investment = investment;
+        this.InvestorId = id;
+        this.InvestorEmail = email;
+        this.InvestorName = name;
+        this.InvestorPhone = phone;
+        this.Investment = investment;
     }
 }

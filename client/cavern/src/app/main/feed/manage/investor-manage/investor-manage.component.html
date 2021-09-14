@@ -1,0 +1,9 @@
+<span>
+    <cs-feed-item [house]="house"></cs-feed-item>
+    <div>
+        <h2>You've invested</h2>
+        <h3>{{ yourInvestment | money }}</h3>
+        <input *ngIf="!isCompleted" type="button" value="Edit Investment" (click)="editInvestment()">
+        <input type="button" value="Contact Organization" (click)="contactOrganization()">
+    </div>
+</span>

@@ -1,6 +1,8 @@
 <main>
-    <span *ngFor="let house of myHouses">
-        <cs-feed-item [house]="house" class="feed"></cs-feed-item>
-        <p>edit</p>
-    </span>
+    <ng-container *ngIf="isAdmin">
+        <cs-member-manage *ngFor="let house of myHouses" [house]="house"></cs-member-manage>
+    </ng-container>
+    <ng-container *ngIf="!isAdmin">
+        <cs-investor-manage *ngFor="let house of myHouses" [house]="house"></cs-investor-manage>
+    </ng-container>
 </main>
