@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { House } from 'src/app/models/house';
-import { User } from 'src/app/models/User';
+import { Investor } from 'src/app/models/investor';
+import { HouseService } from 'src/app/services/house.service';
 
 @Component({
   selector: 'cs-edit-property',
@@ -11,16 +11,22 @@ export class EditPropertyComponent implements OnInit {
 
 
   @Input()
-  house: House;
+  investors: Investor[];
   @Input()
-  fundsNeeded: number;
-  hasInvested: boolean = false;
-  currentInvestment: number;
-  currentUser: User;
+  houseId: number;
 
-  constructor() { }
+  constructor(private houseService: HouseService) { }
 
   ngOnInit(): void {
+
+  }
+
+  removeInvestor(investorId: number) {
+    this.houseService.deleteInvestor(this.houseId, investorId).subscribe(() => {
+      window.location.reload();
+    }, err => {
+      alert('Unable to remove investor')
+    });
   }
 
 }

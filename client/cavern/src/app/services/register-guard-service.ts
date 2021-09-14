@@ -17,7 +17,7 @@ export class RegisterGuardService implements CanActivate {
     if (this.currentUser.id > 0) {
       return true;
     }
-    this.router.navigate(['register']);
+    this.router.navigate(['']);
     alert(`you are not logged in`);
     return false;
   }

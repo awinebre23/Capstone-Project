@@ -42,4 +42,10 @@ export class UserService {
   storeUserLocal(user) {
     localStorage.setItem('currentUser', JSON.stringify(user));
   }
+
+  logOut() {
+    new User(0, '', '', '', '');
+    localStorage.clear();
+    window.location.reload();
+  }
 }

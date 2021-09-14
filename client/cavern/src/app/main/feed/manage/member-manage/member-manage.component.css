@@ -1,0 +1,13 @@
+span {
+  display: flex;
+}
+
+cs-feed-item {
+  width: 80%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

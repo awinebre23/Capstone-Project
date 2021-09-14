@@ -25,16 +25,16 @@ export class HouseService {
     return this.http.get<House>(`${this.houseBaseUrl}/${id}`);
   }
 
-  createHouse(house: House) {
-    this.http.post<House>(this.houseBaseUrl, house, this.jsonContentTypeHeaders);
+  createHouse(house: House): Observable<House> {
+    return this.http.post<House>(this.houseBaseUrl, house, this.jsonContentTypeHeaders);
   }
 
-  editHouse(house: House) {
-    this.http.put<House>(this.houseBaseUrl, house, this.jsonContentTypeHeaders);
+  editHouse(house: House): Observable<House> {
+    return this.http.put<House>(this.houseBaseUrl, house, this.jsonContentTypeHeaders);
   }
 
-  deleteHouse(id: number) {
-    this.http.delete<House>(`${this.houseBaseUrl}/${id}`);
+  deleteHouse(id: number): Observable<House> {
+    return this.http.delete<House>(`${this.houseBaseUrl}/${id}`);
   }
 
   addInvestor(houseId: number, investor: Investor): Observable<House> {

@@ -19,8 +19,12 @@ export class MemberManageComponent implements OnInit {
   }
 
   removeProperty(): void {
-    this.houseService.deleteHouse(this.house.HouseId);
-    window.location.reload();
+    this.houseService.deleteHouse(this.house.HouseId).subscribe(res => {
+      window.location.reload();
+    }, err => {
+      alert('Unable to remove property.');
+    });
+
   }
 
   editProperty(): void {

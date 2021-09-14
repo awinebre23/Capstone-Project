@@ -1,0 +1,27 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow: auto;
+}
+
+div {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  padding-right: 20px;
+  align-self: center;
+}
+
+button {
+  color: darkgray;
+  background-color: darkred;
+  border-radius: 50%;
+  font-size: 10px;
+  height: 23px;
+  align-self: center;
+  cursor: pointer;
+}

@@ -1,1 +1,7 @@
-<p>edit-property works!</p>
+<h2>Currently invested:</h2>
+<section>
+    <div p *ngFor="let investor of investors">
+        <p>{{ investor.InvestorName }} - {{ investor.Investment | money }}</p>
+        <button id="remove" (click)="removeInvestor(investor.InvestorId)">X</button>
+    </div>
+</section>

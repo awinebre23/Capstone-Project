@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { House } from 'src/app/models/house';
+import { Investor } from 'src/app/models/investor';
 import { HouseService } from 'src/app/services/house.service';
 import { UserService } from 'src/app/services/user.service';
 
@@ -13,6 +14,7 @@ export class PropertyDetailComponent implements OnInit {
 
   house: House;
   houseId: number;
+  investors: Investor[] = [];
   fundsNeeded: number;
   isAdmin: boolean = false;
 
@@ -26,6 +28,7 @@ export class PropertyDetailComponent implements OnInit {
     }
     this.houseService.getHouseById(this.houseId).subscribe(house => {
       this.house = house;
+      this.investors = house.Investors;
       this.fundsNeeded = this.house.RequiredFunds - this.house.CurrentFunds;
     }, err => {
       alert('Unable to load details - ' + err);

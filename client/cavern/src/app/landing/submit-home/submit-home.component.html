@@ -1,1 +1,33 @@
-<p>submit-home works!</p>
+<form [formGroup]="homeForm" (ngSubmit)="onSubmit(homeForm.value)" class="box" id="homeForm">
+
+    <div>
+        <section class="address">
+            <label for="address">Address</label>
+            <input type="text" id="address" formControlName="address">
+
+            <label for="state">State</label>
+            <input type="text" id="state" formControlName="state">
+
+            <label for="city">City</label>
+            <input type="text" id="city" formControlName="city">
+
+            <label for="zipCode">ZipCode</label>
+            <input type="text" id="zipCode" formControlName="zipCode">
+        </section>
+        <section>
+            <label for="description">Description</label>
+            <input type="text" id="description" formControlName="description">
+
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" formControlName="organization">
+
+            <label for="requiredFunds">Required Funds</label>
+            <input type="number" id="requiredFunds" formControlName="requiredFunds" step="1000" min="1000">
+
+            <label for="images">Images</label>
+            <input type="text" id="images" formControlName="images">
+        </section>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>

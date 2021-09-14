@@ -13,7 +13,7 @@
         <div class="stack">
             <p class="description">{{ house.Description }}</p>
             <cs-edit-investment *ngIf="!isAdmin" [house]="house" [fundsNeeded]="fundsNeeded"></cs-edit-investment>
-            <cs-edit-property *ngIf="isAdmin" [house]="house" [fundsNeeded]="fundsNeeded"></cs-edit-property>
+            <cs-edit-property *ngIf="isAdmin" [investors]="investors" [houseId]="houseId"></cs-edit-property>
         </div>
     </span>
 </section>

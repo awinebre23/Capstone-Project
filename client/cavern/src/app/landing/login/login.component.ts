@@ -25,8 +25,9 @@ export class LoginComponent implements OnInit {
   onSubmit(formValues: any) {
     this.userService.login(formValues).subscribe(res => {
       this.userService.storeUserLocal(res);
-      this.router.navigateByUrl('invest');
-      window.location.reload();
+      this.router.navigateByUrl('invest').then(() => {
+        window.location.reload();
+      });
     }, err => {
       alert('Unable to login');
     });
