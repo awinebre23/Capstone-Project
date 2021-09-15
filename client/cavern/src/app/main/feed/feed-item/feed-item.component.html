@@ -3,7 +3,8 @@
     <span>
         <div class="details">
             <h1 class="address" (click)="details()">{{ house.Address }}</h1>
-            <p class="org">{{ house.OrganizationName }}</p>
+            <p class="address2">{{ house.City }}, {{ house.State }} {{house.ZipCode }}</p>
+            <p class="org" (click)="onOrgClick()">{{ house.OrganizationName }}</p>
             <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }}
                 still needed!</p>
             <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>

@@ -25,20 +25,19 @@ export class ManageComponent implements OnInit {
       }
     });
 
-    this.houseService.getAllHouses().subscribe(
-      (res: any) => {
-        if (this.isAdmin) {
-          this.myHouses = res;
-        } else {
-          res.forEach(house => {
-            house.Investors.forEach(investor => {
-              if (investor.InvestorId === this.currentUser.id) {
-                this.myHouses.push(house);
-              }
-            });
+    this.houseService.getAllHouses().subscribe((res: any) => {
+      if (this.isAdmin) {
+        this.myHouses = res;
+      } else {
+        res.forEach(house => {
+          house.Investors.forEach(investor => {
+            if (investor.InvestorId === this.currentUser.id) {
+              this.myHouses.push(house);
+            }
           });
-        }
+        });
       }
+    }
     );
   }
 

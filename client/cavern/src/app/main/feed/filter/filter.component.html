@@ -1,0 +1,35 @@
+<section>
+    <label id="title">filter by</label>
+
+    <label for="state">State</label>
+    <select name="state" id="state">
+        <option value="" hidden></option>
+        <option *ngFor="let state of states" value="{{ state }}">{{ state }}</option>
+    </select>
+
+    <label for="city">City</label>
+    <select name="city" id="city">
+        <option value="" hidden></option>
+        <option *ngFor="let city of cities" value="{{ city }}">{{ city }}</option>
+    </select>
+
+    <label for="zip">Zip Code</label>
+    <select name="zip" id="zip">
+        <option value="" hidden></option>
+        <option *ngFor="let zipCode of zipCodes" value="{{ zipCode }}">{{ zipCode }}</option>
+    </select>
+
+    <label for="organization">Organization</label>
+    <select name="organization" id="organization">
+        <option value="" hidden></option>
+        <option *ngFor="let organization of organizations" value="{{ organization }}">{{ organization }}</option>
+    </select>
+
+    <label for="progress">Progress</label>
+    <select name="progress" id="progress">
+        <option value="" hidden></option>
+        <option *ngFor="let progress of progress" value="{{ progress }}">{{ progress }}</option>
+    </select>
+
+    <button id="clear" (click)="onClear()">Clear</button>
+</section>

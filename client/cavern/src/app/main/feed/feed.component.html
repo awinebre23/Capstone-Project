@@ -1,6 +1,6 @@
 <span>
     <div>
-        <p>filter panel</p>
+        <cs-filter *ngIf="houses.length > 0" [houses]="houses"></cs-filter>
     </div>
     <main>
         <cs-feed-item *ngFor="let house of houses" [house]="house" class="feed"></cs-feed-item>

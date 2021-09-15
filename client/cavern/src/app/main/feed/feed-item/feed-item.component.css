@@ -6,6 +6,8 @@ section {
   margin: 10px 10px;
   background-color: white;
   min-width: 800px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 span {
@@ -25,6 +27,8 @@ div {
 img {
   margin: 10px;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 1%;
 }
 
 .funds {
@@ -41,4 +45,5 @@ img {
 
 .org {
   margin-top: 70%;
+  cursor: pointer;
 }

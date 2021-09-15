@@ -1,0 +1,18 @@
+div {
+  width: 30%;
+  background-color: white;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #ef952b;
+}
+
+#name {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#description {
+  font-style: italic;
+}

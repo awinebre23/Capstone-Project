@@ -1,7 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { House } from 'src/app/models/house';
+import { Organization } from 'src/app/models/organization';
 import { User } from 'src/app/models/User';
+import { OrganizationService } from 'src/app/services/organization.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -17,7 +19,7 @@ export class InvestorManageComponent implements OnInit {
   yourInvestment: number;
   currentUser: User;
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService, private organizationService: OrganizationService, private router: Router) { }
 
   ngOnInit(): void {
     this.currentUser = this.userService.getUser();
@@ -38,7 +40,15 @@ export class InvestorManageComponent implements OnInit {
   }
 
   contactOrganization() {
-    this.router.navigateByUrl(`organizations/${this.house.OrganizationName}`);
+    this.organizationService.getAllOrganizations().subscribe((res: any) => {
+      res.forEach((org: Organization) => {
+        if (org.OrganizationName === this.house.OrganizationName) {
+          this.router.navigateByUrl(`organizations/${org.OrganizationId}`);
+        }
+      });
+    }, err => {
+      alert('Unable to load organization');
+    });
   }
 
 }

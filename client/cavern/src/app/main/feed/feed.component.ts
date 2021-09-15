@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { HouseService } from 'src/app/services/house.service';
 import { House } from '../../models/house';
 
@@ -10,6 +10,7 @@ import { House } from '../../models/house';
 })
 export class FeedComponent implements OnInit {
 
+  @Output()
   houses: House[] = [];
 
   constructor(private houseService: HouseService) { }

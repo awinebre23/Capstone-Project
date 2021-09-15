@@ -8,13 +8,20 @@ main {
 }
 
 div {
-  width: 25%;
+  width: 20%;
   background-color: orange;
-  position: sticky;
+  justify-content: center;
+  margin: 0 20px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 span {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+}
+
+cs-filter {
+  justify-content: center;
+  display: flex;
 }

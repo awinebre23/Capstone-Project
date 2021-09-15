@@ -6,6 +6,7 @@ import { ManageComponent } from './manage/manage.component';
 import { InvestorManageComponent } from './manage/investor-manage/investor-manage.component';
 import { MemberManageComponent } from './manage/member-manage/member-manage.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FeedItemComponent,
     ManageComponent,
     InvestorManageComponent,
-    MemberManageComponent
+    MemberManageComponent,
+    FilterComponent
   ],
   imports: [
     CommonModule,
