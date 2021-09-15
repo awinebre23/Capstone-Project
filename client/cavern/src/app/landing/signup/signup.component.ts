@@ -17,7 +17,9 @@ export class SignupComponent implements OnInit {
     this.regForm = fb.group({
       'name': [null, [Validators.required]],
       'username': [null, Validators.required],
-      'password': [null, [Validators.required]]
+      'password': [null, [Validators.required]],
+      'member': [null, [Validators.required]],
+      'investor': [null, [Validators.required]]
     });
   }
 
@@ -25,13 +27,26 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit(formValues: any) {
+    formValues = this.getRole(formValues);
     this.userService.signup(formValues).subscribe(res => {
       this.userService.storeUserLocal(res);
-      this.router.navigateByUrl('invest');
-      window.location.reload();
+      this.router.navigateByUrl('invest').then(() => {
+        window.location.reload();
+      });
     }, err => {
       alert('Unable to signup');
     });
+  }
+
+  getRole(formValues: any) {
+    if (formValues.member === 'Member') {
+      formValues.role = 'Member';
+    } else if (formValues.investor === 'Investor') {
+      formValues.role = 'Investor';
+    }
+    delete formValues.member;
+    delete formValues.investor;
+    return formValues;
   }
 
 }

@@ -41,6 +41,7 @@ export class UserService {
 
   storeUserLocal(user) {
     localStorage.setItem('currentUser', JSON.stringify(user));
+    this.getUser();
   }
 
   logOut() {

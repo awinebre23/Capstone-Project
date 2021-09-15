@@ -19,7 +19,6 @@ export class NavComponent implements OnInit, OnChanges {
   ngOnInit(): void {
     this.userService.currentUser.subscribe(user => {
       this.currentUser = user;
-      console.log(this.currentUser);
       if (this.currentUser.role === "Member") {
         this.isAdmin = true;
         this.isRegistered = true;
