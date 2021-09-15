@@ -21,4 +21,6 @@ section > button {
 #title {
   font-style: italic;
   font-family: cursive;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }

@@ -2,11 +2,14 @@
     <img src="assets/images/before-after.png" alt="before-after">
     <span>
         <img src="assets/images/handshake.png" alt="handshake">
-        <div>
+        <div id="partners" *ngIf="organizations.length > 0">
+            <h1>Our Partners</h1>
+            <h3 *ngFor="let organization of organizations">{{ organization.OrganizationName }}</h3>
+        </div>
+        <div id="buttons">
             <input type="button" value="Login" (click)="clickedLogin()">
             <input type="button" value="Sign Up" (click)="clickedSignup()">
             <input type="button" value="Submit Property" (click)="clickedSubmit()">
         </div>
     </span>
-
 </main>

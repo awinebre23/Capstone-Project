@@ -5,6 +5,7 @@ main {
   justify-content: stretch;
   height: 750px;
   width: 75%;
+  min-width: 880px;
 }
 
 main::-webkit-scrollbar {
@@ -12,18 +13,20 @@ main::-webkit-scrollbar {
 }
 
 div {
-  width: 20%;
+  width: 15%;
   background-color: orange;
   justify-content: center;
   margin: 0 20px;
   border: 1px solid black;
   border-radius: 5px;
+  min-width: 205px;
 }
 
 span {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  overflow: auto;
 }
 
 cs-filter {

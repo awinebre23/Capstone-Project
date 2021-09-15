@@ -17,6 +17,7 @@ export class PropertyDetailComponent implements OnInit {
   investors: Investor[] = [];
   fundsNeeded: number;
   isAdmin: boolean = false;
+  imageNumber: number = 0;
 
   constructor(private houseService: HouseService, private userService: UserService, private route: ActivatedRoute) {
     this.route.params.subscribe(params => this.houseId = params.id);
@@ -35,4 +36,15 @@ export class PropertyDetailComponent implements OnInit {
     });
   }
 
+  previous() {
+    if (this.imageNumber > 0) {
+      this.imageNumber--;
+    }
+  }
+
+  next() {
+    if (this.imageNumber < this.house.Images.length - 1) {
+      this.imageNumber++;
+    }
+  }
 }

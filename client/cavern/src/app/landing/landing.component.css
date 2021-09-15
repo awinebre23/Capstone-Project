@@ -6,16 +6,27 @@ main {
   width: 100%;
 }
 
-div {
+#buttons {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 10px;
-  margin-top: 200px;
+  /* margin-top: 100px; */
+}
+
+h1 {
+  font-family: cursive;
+  border-bottom: 1px solid #ef952b;
+}
+
+h3 {
+  font-family: cursive;
+  color: #ef952b;
+  font-style: italic;
 }
 
 input {
-  font-size: 25px;
+  font-size: 20px;
   width: 40%;
   background-color: #d4bc94;
   border: 2px solid #ef952b;
@@ -24,5 +35,17 @@ input {
   text-align: center;
   padding: 10px;
   margin: 5px 5px;
+  font-weight: bold;
   font-family: cursive;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  overflow: auto;
+}
+
+img {
+  overflow: auto;
 }

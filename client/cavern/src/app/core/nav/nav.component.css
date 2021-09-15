@@ -13,7 +13,6 @@ ul {
 li > a {
   color: #fff;
   text-decoration: none;
-  display: inline;
   padding-right: 1.8em;
   padding-left: 0.45em;
   cursor: pointer;

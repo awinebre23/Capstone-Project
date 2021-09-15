@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Organization } from '../models/organization';
+import { OrganizationService } from '../services/organization.service';
 
 @Component({
   selector: 'cs-landing',
@@ -8,9 +10,18 @@ import { Router } from '@angular/router';
 })
 export class LandingComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  organizations: Organization[] = [];
+
+  constructor(private router: Router, private organizationService: OrganizationService) { }
 
   ngOnInit(): void {
+    this.organizationService.getAllOrganizations().subscribe((res: any) => {
+      res.forEach(org => {
+        this.organizations.push(org);
+      });
+    }, err => {
+      alert('Unable to load organization');
+    });
   }
 
   clickedLogin(): void {
