@@ -26,12 +26,10 @@ export class FilterComponent implements OnInit {
   }
 
   setEmitters() {
-    document.getElementById('state').addEventListener('change', this.filterByState);
+    document.getElementById('state').addEventListener('change', this.filterByState.bind(this));
   }
 
   checkValues() {
-    console.log(this);
-    console.log(this.houses);
     this.houses.forEach(house => {
       if (!this.states.has(house.State)) {
         this.states.add(house.State);
@@ -52,7 +50,6 @@ export class FilterComponent implements OnInit {
   }
 
   filterByState(event) {
-    console.log(this);
     console.log(this.houses);
     console.log(this.filteredHouses);
     const state = event.target.value;
