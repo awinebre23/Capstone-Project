@@ -1,0 +1,23 @@
+button {
+    cursor: pointer;
+    font-family: cursive;
+    font-size: large;
+    background-color: #d4bc94;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+input {
+    font-size: x-large;
+    border-radius: 3px;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-family: cursive;
+}
+
+h2 {
+    font-family: cursive;
+}

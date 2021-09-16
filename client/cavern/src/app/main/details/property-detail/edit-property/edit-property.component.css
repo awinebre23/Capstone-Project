@@ -25,3 +25,8 @@ button {
   align-self: center;
   cursor: pointer;
 }
+
+h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}

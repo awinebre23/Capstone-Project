@@ -18,7 +18,7 @@ export class RegisterGuardService implements CanActivate {
       return true;
     }
     this.router.navigate(['']);
-    alert(`you are not logged in`);
+    alert(`You must be logged in to access this page`);
     return false;
   }
 }

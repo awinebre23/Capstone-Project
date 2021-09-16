@@ -9,4 +9,26 @@ cs-feed-item {
 div {
   display: flex;
   flex-direction: column;
+  width: 15%;
+  height: fit-content;
+  background-color: #ef952b;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+h2 {
+  font-family: cursive;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: cursive;
+}
+
+input {
+  cursor: pointer;
+  font-family: cursive;
+  font-size: x-large;
+  background-color: #d4bc94;
+  border-radius: 4px;
 }

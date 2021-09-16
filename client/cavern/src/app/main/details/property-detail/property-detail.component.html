@@ -6,13 +6,17 @@
                 <img src="{{ house.Images[imageNumber] }}">
                 <p (click)="next()" *ngIf="imageNumber < house.Images.length - 1"><i class="arrow right"></i></p>
             </div>
-            <div>
-                <h1 class="address">{{ house.Address }}</h1>
-                <p class="address2">{{ house.City }}, {{ house.State }} {{house.ZipCode }}</p>
-                <p class="progress">{{ house.Progress }}</p>
-                <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }} still needed!</p>
-                <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
-                <p class="org">{{ house.OrganizationName }}</p>
+            <div class="minor">
+                <div class="addressFull">
+                    <h1 class="address">{{ house.Address }}</h1>
+                    <p class="address2">{{ house.City }}, {{ house.State }} {{house.ZipCode }}</p>
+                </div>
+                <div class="other">
+                    <p class="progress">{{ house.Progress }}</p>
+                    <p *ngIf="house.Progress === 'In Progress'" class="funds">{{ fundsNeeded | money }} still needed!</p>
+                    <p *ngIf="house.Progress !== 'In Progress'" class="funds">Goal reached!</p>
+                    <p class="org">{{ house.OrganizationName }}</p>
+                </div>
             </div>
         </div>
         <div class="stack">

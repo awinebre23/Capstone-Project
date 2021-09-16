@@ -8,15 +8,16 @@
 </div>
 <div *ngIf="hasInvested && fundsNeeded > 0">
     <h1>Would you like to update your investment?</h1>
-    <h2>You have already invested: {{ currentInvestment | money }}</h2>
+    <h2>You have invested: {{ currentInvestment | money }}</h2>
     <form [formGroup]="regForm" (ngSubmit)="onUpdate(regForm.value)" class="box" id="registerForm">
         <input type="number" step="100" min="100" max="{{ fundsNeeded }}" id="investment" required
             formControlName="investment" placeholder="{{ currentInvestment }}" value="{{ currentInvestment }}">
         <button type="submit">Update Investment</button>
+        <button type="reset" (click)="onRetract()">Retract Investment</button>
     </form>
-    <form [formGroup]="regForm" (ngSubmit)="onRetract()" class="box" id="registerForm">
-        <button type="submit">Retract Investment</button>
-    </form>
+    <!-- <form [formGroup]="regForm" (ngSubmit)="onRetract()" class="box" id="registerForm">
+        <button type="reset" (click)="onRetract()">Retract Investment</button>
+    </form> -->
 </div>
 <div *ngIf="fundsNeeded <= 0">
     <h1>This property has already met its investment total. No more investments will be taken at this time.</h1>

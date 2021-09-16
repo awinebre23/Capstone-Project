@@ -18,9 +18,12 @@ li > a {
   cursor: pointer;
   font-size: larger;
   font-family: cursive;
+  text-shadow: 2px 2px #ef952b;
 }
 
 nav > ul > li > a.active {
   color: #ef952b;
   font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px white;
 }
