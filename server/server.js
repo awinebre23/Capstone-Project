@@ -109,12 +109,8 @@ function calculateFunds(house) {
 }
 
 function isValidInvestor(investor) {
-    if (investor.InvestorEmail == undefined || investor.InvestorEmail.trim() == "")
-        return 1;
     if (investor.InvestorName == undefined || investor.InvestorName.trim() == "")
         return 2;
-    if (investor.InvestorPhone == undefined || investor.InvestorPhone.trim() == "")
-        return 3;
     if (investor.Investment == undefined)
         return 3;
 
@@ -376,10 +372,8 @@ app.post("/api/houses/:id/investors", urlencodedParser, function (req, res) {
 
     // assemble investor information so we can validate it
     let investor = {
-        InvestorId: getNextId("investor"),   // assign new id
-        InvestorEmail: req.body.InvestorEmail,
+        InvestorId: req.body.InvestorId,   // assign new id
         InvestorName: req.body.InvestorName,
-        InvestorPhone: req.body.InvestorPhone,
         Investment: req.body.Investment
     };
 
@@ -423,9 +417,7 @@ app.put("/api/houses/:id/investors", urlencodedParser, function (req, res) {
     // assemble investor information so we can validate it
     let investor = {
         InvestorId: req.body.InvestorId,
-        InvestorEmail: req.body.InvestorEmail,
         InvestorName: req.body.InvestorName,
-        InvestorPhone: req.body.InvestorPhone,
         Investment: req.body.Investment
     };
 
@@ -456,9 +448,7 @@ app.put("/api/houses/:id/investors", urlencodedParser, function (req, res) {
     }
 
     // update the investor
-    match.InvestorEmail = req.body.InvestorEmail;
     match.InvestorName = req.body.InvestorName;
-    match.InvestorPhone = req.body.InvestorPhone;
     match.Investment = req.body.Investment;
     calculateFunds(matchingHouse);
 
@@ -556,7 +546,7 @@ app.post("/api/users", urlencodedParser, function (req, res) {
 
     console.log("New user added!");
     console.log(user);
-    res.status(200).send();
+    res.status(200).send(user);
 });
 
 // POST request to login -- sent username and password in request body 
