@@ -3,6 +3,10 @@ main {
   height: 750px;
 }
 
+main::-webkit-scrollbar {
+  display: none;
+}
+
 span {
   display: flex;
 }

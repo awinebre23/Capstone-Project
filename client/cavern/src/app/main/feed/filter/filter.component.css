@@ -14,13 +14,21 @@ section > option {
   margin-bottom: 10px;
 }
 
-section > button {
-  margin-top: 50px;
-}
-
 #title {
   font-style: italic;
   font-family: cursive;
   padding-bottom: 10px;
+  padding-top: 10px;
   border-bottom: 1px solid black;
+}
+
+#clear {
+  cursor: pointer;
+  font-family: cursive;
+  font-size: large;
+  background-color: #d4bc94;
+  border-radius: 4px;
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

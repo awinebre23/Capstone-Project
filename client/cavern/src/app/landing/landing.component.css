@@ -16,6 +16,7 @@ main {
 h1 {
   font-family: cursive;
   border-bottom: 1px solid #ef952b;
+  color: white;
 }
 
 h3 {

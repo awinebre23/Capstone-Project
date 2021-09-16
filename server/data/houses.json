@@ -1,1 +1,169 @@
-[{"HouseId":1,"Address":"1234 House Ave","State":"Arkansas","City":"Rogers","ZipCode":"72758","OrganizationName":"Flippin Good Houses","Description":"A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development! Invest asap for a quick turnaround.","RequiredFunds":1000000,"CurrentFunds":20000,"Progress":"In Progress","Images":["assets/images/house1.png","assets/images/house1-2.png","assets/images/house1-3.png"],"Investors":[{"InvestorId":32,"InvestorEmail":"theaterkid0625@gmail.com","InvestorName":"Ben Wantingtoinvest","InvestorPhone":"555-000-0002","Investment":5000},{"InvestorId":33,"InvestorEmail":"theaterkid0625@gmail.com","InvestorName":"Ima Invest","InvestorPhone":"555-000-0002","Investment":5000},{"InvestorId":33,"InvestorEmail":"theaterkid0625@gmail.com","InvestorName":"Hugh G. Invest","InvestorPhone":"555-000-0002","Investment":5000},{"InvestorId":2,"InvestorName":"Alec Winebrenner","Investment":5000}]},{"HouseId":2,"Address":"456 Real Building Road","State":"Colorado","City":"Boulder","ZipCode":"12345","OrganizationName":"Real Real Estate Company","Description":"A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!","RequiredFunds":1000000,"CurrentFunds":0,"Progress":"In Progress","Images":["assets/images/house2.png","assets/images/house2.png","assets/images/house2.png"],"Investors":[]},{"HouseId":3,"Address":"3148 Street St.","State":"Arkansas","City":"Fayetteville","ZipCode":"98745","OrganizationName":"Homes R Us","Description":"A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!","RequiredFunds":1000000,"CurrentFunds":100,"Progress":"In Progress","Images":["assets/images/house3.png","assets/images/house3.png","assets/images/house3.png"],"Investors":[{"InvestorId":2,"InvestorName":"Alec Winebrenner","Investment":100}]},{"HouseId":4,"Address":"1234 House Ave","State":"Arkansas","City":"Fayetteville","ZipCode":"98745","OrganizationName":"Flippin Good Houses","Description":"A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!","RequiredFunds":1000000,"CurrentFunds":1000000,"Progress":"Investment Total Reached","Images":["assets/images/house4.png","assets/images/house4.png","assets/images/house4.png"],"Investors":[{"InvestorId":3,"InvestorEmail":"theaterkid0625@gmail.com","InvestorName":"Ben Wantingtoinvest","InvestorPhone":"555-000-0002","Investment":1000000}]},{"HouseId":5,"Address":"45832 Street Road","State":"Arkansas","City":"Fayetteville","ZipCode":"98745","OrganizationName":"Flippin Good Houses","Description":"A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!","RequiredFunds":100000,"CurrentFunds":0,"Progress":"In Progress","Images":["assets/images/house5.png","assets/images/house5.png","assets/images/house5.png"],"Investors":[]},{"HouseId":6,"Address":"7536 Thisanaddress Court","State":"Arkansas","City":"Fayetteville","ZipCode":"98745","OrganizationName":"Flippin Good Houses","Description":"A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!","RequiredFunds":100000,"CurrentFunds":0,"Progress":"In Progress","Images":["assets/images/house6.png","assets/images/house6.png","assets/images/house6.png"],"Investors":[]},{"HouseId":7,"Address":"777 Plzinvest Road","State":"Arkansas","City":"Fayetteville","ZipCode":"98745","OrganizationName":"Flippin Good Houses","Description":"A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!","RequiredFunds":100000,"CurrentFunds":0,"Progress":"In Progress","Images":["assets/images/house7.png","assets/images/house7.png","assets/images/house7.png"],"Investors":[]}]
+[
+    {
+        "HouseId": 1,
+        "Address": "1234 House Ave",
+        "State": "Arkansas",
+        "City": "Rogers",
+        "ZipCode": "72758",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development! Invest asap for a quick turnaround.",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 20000,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house1.png",
+            "assets/images/house1-2.png",
+            "assets/images/house1-3.png"
+        ],
+        "Investors": [
+            {
+                "InvestorId": 32,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Ben Wantingtoinvest",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            },
+            {
+                "InvestorId": 33,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Ima Invest",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            },
+            {
+                "InvestorId": 33,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Hugh G. Invest",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            },
+            {
+                "InvestorId": 2,
+                "InvestorName": "Alec Winebrenner",
+                "Investment": 5000
+            }
+        ]
+    },
+    {
+        "HouseId": 2,
+        "Address": "456 Real Building Road",
+        "State": "Colorado",
+        "City": "Boulder",
+        "ZipCode": "12345",
+        "OrganizationName": "Real Real Estate Company",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house2.png",
+            "assets/images/house2.png",
+            "assets/images/house2.png"
+        ],
+        "Investors": []
+    },
+    {
+        "HouseId": 3,
+        "Address": "3148 Street St.",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Homes R Us",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 100,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house3.png",
+            "assets/images/house3.png",
+            "assets/images/house3.png"
+        ],
+        "Investors": [
+            {
+                "InvestorId": 2,
+                "InvestorName": "Alec Winebrenner",
+                "Investment": 100
+            }
+        ]
+    },
+    {
+        "HouseId": 4,
+        "Address": "1234 House Ave",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
+        "RequiredFunds": 1000000,
+        "CurrentFunds": 1000000,
+        "Progress": "Investment Total Reached",
+        "Images": [
+            "assets/images/house4.png",
+            "assets/images/house4.png",
+            "assets/images/house4.png"
+        ],
+        "Investors": [
+            {
+                "InvestorId": 3,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Ben Wantingtoinvest",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 1000000
+            }
+        ]
+    },
+    {
+        "HouseId": 5,
+        "Address": "45832 Street Road",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
+        "RequiredFunds": 100000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house5.png",
+            "assets/images/house5.png",
+            "assets/images/house5.png"
+        ],
+        "Investors": []
+    },
+    {
+        "HouseId": 6,
+        "Address": "7536 Thisanaddress Court",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
+        "RequiredFunds": 100000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house6.png",
+            "assets/images/house6.png",
+            "assets/images/house6.png"
+        ],
+        "Investors": []
+    },
+    {
+        "HouseId": 7,
+        "Address": "777 Plzinvest Road",
+        "State": "Arkansas",
+        "City": "Fayetteville",
+        "ZipCode": "98745",
+        "OrganizationName": "Flippin Good Houses",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
+        "RequiredFunds": 100000,
+        "CurrentFunds": 0,
+        "Progress": "In Progress",
+        "Images": [
+            "assets/images/house7.png",
+            "assets/images/house7.png",
+            "assets/images/house7.png"
+        ],
+        "Investors": []
+    }
+]
