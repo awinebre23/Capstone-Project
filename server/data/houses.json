@@ -6,19 +6,40 @@
         "City": "Rogers",
         "ZipCode": "72758",
         "OrganizationName": "Flippin Good Houses",
-        "Description": "Beautiful",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 1000000,
-        "CurrentFunds": 5000,
+        "CurrentFunds": 20000,
         "Progress": "In Progress",
         "Images": [
+            "assets/images/house1.png",
+            "assets/images/house1.png",
             "assets/images/house1.png"
         ],
         "Investors": [
             {
-                "InvestorId": 1,
+                "InvestorId": 32,
                 "InvestorEmail": "theaterkid0625@gmail.com",
-                "InvestorName": "Ezra Aiden",
+                "InvestorName": "Ben Wantingtoinvest",
                 "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            },
+            {
+                "InvestorId": 33,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Ima Invest",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            },
+            {
+                "InvestorId": 33,
+                "InvestorEmail": "theaterkid0625@gmail.com",
+                "InvestorName": "Hugh G. Invest",
+                "InvestorPhone": "555-000-0002",
+                "Investment": 5000
+            },
+            {
+                "InvestorId": 2,
+                "InvestorName": "Alec Winebrenner",
                 "Investment": 5000
             }
         ]
@@ -30,22 +51,16 @@
         "City": "Boulder",
         "ZipCode": "12345",
         "OrganizationName": "Real Real Estate Company",
-        "Description": "Beautiful",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 1000000,
         "CurrentFunds": 5000,
         "Progress": "In Progress",
         "Images": [
+            "assets/images/house2.png",
+            "assets/images/house2.png",
             "assets/images/house2.png"
         ],
-        "Investors": [
-            {
-                "InvestorId": 2,
-                "InvestorEmail": "theaterkid0625@gmail.com",
-                "InvestorName": "Mr Investor",
-                "InvestorPhone": "555-000-0002",
-                "Investment": 5000
-            }
-        ]
+        "Investors": []
     },
     {
         "HouseId": 3,
@@ -54,11 +69,13 @@
         "City": "Fayetteville",
         "ZipCode": "98745",
         "OrganizationName": "Homes R Us",
-        "Description": "Beautiful",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 1000000,
         "CurrentFunds": 0,
         "Progress": "In Progress",
         "Images": [
+            "assets/images/house3.png",
+            "assets/images/house3.png",
             "assets/images/house3.png"
         ],
         "Investors": []
@@ -70,18 +87,20 @@
         "City": "Fayetteville",
         "ZipCode": "98745",
         "OrganizationName": "Flippin Good Houses",
-        "Description": "Beautiful",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 1000000,
         "CurrentFunds": 1000000,
         "Progress": "Investment Total Reached",
         "Images": [
+            "assets/images/house4.png",
+            "assets/images/house4.png",
             "assets/images/house4.png"
         ],
         "Investors": [
             {
                 "InvestorId": 3,
                 "InvestorEmail": "theaterkid0625@gmail.com",
-                "InvestorName": "Ezra Aiden",
+                "InvestorName": "Ben Wantingtoinvest",
                 "InvestorPhone": "555-000-0002",
                 "Investment": 1000000
             }
@@ -94,11 +113,13 @@
         "City": "Fayetteville",
         "ZipCode": "98745",
         "OrganizationName": "Flippin Good Houses",
-        "Description": "Beautiful",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 100000,
         "CurrentFunds": 0,
         "Progress": "In Progress",
         "Images": [
+            "assets/images/house5.png",
+            "assets/images/house5.png",
             "assets/images/house5.png"
         ],
         "Investors": []
@@ -110,11 +131,13 @@
         "City": "Fayetteville",
         "ZipCode": "98745",
         "OrganizationName": "Flippin Good Houses",
-        "Description": "Beautiful",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 100000,
         "CurrentFunds": 0,
         "Progress": "In Progress",
         "Images": [
+            "assets/images/house6.png",
+            "assets/images/house6.png",
             "assets/images/house6.png"
         ],
         "Investors": []
@@ -126,11 +149,13 @@
         "City": "Fayetteville",
         "ZipCode": "98745",
         "OrganizationName": "Flippin Good Houses",
-        "Description": "Beautiful",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 100000,
         "CurrentFunds": 0,
         "Progress": "In Progress",
         "Images": [
+            "assets/images/house7.png",
+            "assets/images/house7.png",
             "assets/images/house7.png"
         ],
         "Investors": []
