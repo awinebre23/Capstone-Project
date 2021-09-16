@@ -10,7 +10,6 @@ import { House } from '../../models/house';
 })
 export class FeedComponent implements OnInit {
 
-  @Output()
   houses: House[] = [];
 
   constructor(private houseService: HouseService) { }
@@ -19,5 +18,9 @@ export class FeedComponent implements OnInit {
     this.houseService.getAllHouses().subscribe((res: any) => {
       this.houses = res;
     });
+  }
+
+  updateFeed(event) {
+    this.houses = event;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { House } from 'src/app/models/house';
 
 @Component({
@@ -11,6 +11,8 @@ export class FilterComponent implements OnInit {
 
   @Input()
   houses: House[];
+  @Output()
+  filterChange = new EventEmitter<House[]>();
   filteredHouses: House[] = [];
   states: Set<string> = new Set();
   cities: Set<string> = new Set();
@@ -27,6 +29,10 @@ export class FilterComponent implements OnInit {
 
   setEmitters() {
     document.getElementById('state').addEventListener('change', this.filterByState.bind(this));
+    document.getElementById('city').addEventListener('change', this.filterByCity.bind(this));
+    document.getElementById('zip').addEventListener('change', this.filterByZip.bind(this));
+    document.getElementById('organization').addEventListener('change', this.filterByOrganization.bind(this));
+    document.getElementById('progress').addEventListener('change', this.filterByProgress.bind(this));
   }
 
   checkValues() {
@@ -50,15 +56,52 @@ export class FilterComponent implements OnInit {
   }
 
   filterByState(event) {
-    console.log(this.houses);
-    console.log(this.filteredHouses);
-    const state = event.target.value;
     this.houses.forEach(house => {
-      if (house.State !== state) {
+      if (house.State === event.target.value) {
         this.filteredHouses.push(house);
       }
     });
-    this.houses = { ...this.filteredHouses };
+    this.filterChange.emit(this.filteredHouses);
+    this.filteredHouses = [];
+  }
+
+  filterByCity(event) {
+    this.houses.forEach(house => {
+      if (house.City === event.target.value) {
+        this.filteredHouses.push(house);
+      }
+    });
+    this.filterChange.emit(this.filteredHouses);
+    this.filteredHouses = [];
+  }
+
+  filterByZip(event) {
+    this.houses.forEach(house => {
+      if (house.ZipCode === event.target.value) {
+        this.filteredHouses.push(house);
+      }
+    });
+    this.filterChange.emit(this.filteredHouses);
+    this.filteredHouses = [];
+  }
+
+  filterByOrganization(event) {
+    this.houses.forEach(house => {
+      if (house.OrganizationName === event.target.value) {
+        this.filteredHouses.push(house);
+      }
+    });
+    this.filterChange.emit(this.filteredHouses);
+    this.filteredHouses = [];
+  }
+
+  filterByProgress(event) {
+    this.houses.forEach(house => {
+      if (house.Progress === event.target.value) {
+        this.filteredHouses.push(house);
+      }
+    });
+    this.filterChange.emit(this.filteredHouses);
     this.filteredHouses = [];
   }
 

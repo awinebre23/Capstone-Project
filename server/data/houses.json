@@ -6,9 +6,9 @@
         "City": "Rogers",
         "ZipCode": "72758",
         "OrganizationName": "Flippin Good Houses",
-        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
+        "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development! Invest asap for a quick turnaround.",
         "RequiredFunds": 1000000,
-        "CurrentFunds": 20000,
+        "CurrentFunds": 15000,
         "Progress": "In Progress",
         "Images": [
             "assets/images/house1.png",
@@ -36,11 +36,6 @@
                 "InvestorName": "Hugh G. Invest",
                 "InvestorPhone": "555-000-0002",
                 "Investment": 5000
-            },
-            {
-                "InvestorId": 2,
-                "InvestorName": "Alec Winebrenner",
-                "Investment": 5000
             }
         ]
     },
@@ -53,7 +48,7 @@
         "OrganizationName": "Real Real Estate Company",
         "Description": "A fixer-upper with strong roots. Sits on a 2.5 acre lot in a great location right outside of town. Once renovated, this home will sell itself. We will be going with a rustic-modern look. Think dark red paint with big white window panels. Can't wait to get this project funded and under development!",
         "RequiredFunds": 1000000,
-        "CurrentFunds": 5000,
+        "CurrentFunds": 0,
         "Progress": "In Progress",
         "Images": [
             "assets/images/house2.png",
@@ -64,7 +59,7 @@
     },
     {
         "HouseId": 3,
-        "Address": "1234 House Ave",
+        "Address": "3148 Street St.",
         "State": "Arkansas",
         "City": "Fayetteville",
         "ZipCode": "98745",

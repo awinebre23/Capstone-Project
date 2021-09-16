@@ -14,5 +14,4 @@ export class MoneyPipe implements PipeTransform {
 
     return formatter.format(value);
   }
-
 }
