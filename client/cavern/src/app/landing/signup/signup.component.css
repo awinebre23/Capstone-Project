@@ -2,8 +2,11 @@ form {
   margin-top: 20px;
 }
 
-form > label {
-  font-size: larger;
+label {
+  font-size: 20px;
+  font-family: cursive;
+  color: white;
+  text-shadow: 1px 1px #ef952b;
 }
 
 input[type="text"] {
@@ -42,6 +45,9 @@ input[type="submit"] {
   margin: 10px;
   font-size: medium;
   font-weight: bold;
+  font-family: cursive;
+  border-radius: 4px;
+  text-shadow: 1px 1px darkgray;
 }
 
 input[type="text"].ng-touched.ng-valid {

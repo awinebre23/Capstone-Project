@@ -103,7 +103,9 @@ function calculateFunds(house) {
     });
     if (currentFunds >= house.RequiredFunds) {
         currentFunds = house.RequiredFunds;
-        house.Status = "Investment Total Reached"
+        house.Progress = "Investment Total Reached"
+    } else {
+        house.Progress = "In Progress"
     }
     house.CurrentFunds = currentFunds;
 }

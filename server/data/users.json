@@ -54,5 +54,19 @@
         "role": "Investor",
         "username": "swifty",
         "password": "reallyfast!"
+    },
+    {
+        "id": 5,
+        "name": "test",
+        "role": "Member",
+        "username": "test",
+        "password": "test"
+    },
+    {
+        "id": 6,
+        "name": "test2",
+        "role": "Investor",
+        "username": "test2",
+        "password": "test2"
     }
 ]
